@@ -1,6 +1,5 @@
 const express = require("express");
 const router = require("./router");
-const expressLayouts = require("express-ejs-layouts");
 
 const app = express();
 
@@ -12,8 +11,7 @@ app.use(express.static("public"));
 
 app.set("views", "views");
 app.set("view engine", "ejs");
-// app.set("layout", "layouts/layout");
-// app.use(expressLayouts);
+
 app.use(router);
 
 app.listen(4000, () => {
