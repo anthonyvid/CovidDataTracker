@@ -13,8 +13,7 @@ app.use(express.static("public"));
 app.set("views", "views");
 app.set("view engine", "ejs");
 app.set("layout", "layouts/layout");
-expressLayouts;
-
+app.use(expressLayouts);
 app.use(router);
 
 app.listen(4000, () => {

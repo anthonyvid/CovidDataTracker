@@ -3,5 +3,5 @@ exports.landingPage = function (req, res) {
 };
 
 exports.homePage = function (req, res) {
-	res.send("made it");
+	res.render("home");
 };
